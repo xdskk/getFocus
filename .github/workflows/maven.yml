@@ -25,5 +25,5 @@ jobs:
       env: 
         Cookie: ${{ secrets.Cookie }}
       run: |
-        cd GetFocus
+        cd getFocus
         mvn compile exec:java -Dexec.mainClass="GetFocus" -Dexec.args="${Cookie}"
