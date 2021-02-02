@@ -26,4 +26,4 @@ jobs:
         Cookie: ${{ secrets.Cookie }}
       run: |
         cd getFocus
-        mvn -e compile exec:java -Dexec.mainClass="GetFocus" -Dexec.args="${Cookie}"
+        mvn package assembly:java -Dexec.mainClass="GetFocus" -Dexec.args="${Cookie}"
